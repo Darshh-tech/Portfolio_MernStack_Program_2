@@ -1,95 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Vaibhav Sharma Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darsh Pincha | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Vaibhav Sharma</h1>
-        <p>Aspiring Web Developer</p>
+        <div class="container">
+            <div class="logo">
+                <h1>Darsh Pincha</h1>
+                <p>A lifelong learner & developer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="home">
-        <h2>Automotives and IT</h2>
-        <p>
-            Learning about cars is my true passion after working on computer systems for a very long time now. I actively seek new age coming technologies in IT and Automotive sector. 
-        </p>
-
-        <ol>
-            <li>Improves creativity</li>
-            <li>Enhances observation skills</li>
-            <li>Preserves memories</li>
-        </ol>
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Photography & Coding</h2>
+            <p>I find immense joy in capturing moments through a lens and building solutions through code. Exploring the intersection of creativity and logic is what keeps me motivated every day.</p>
+            <h3>3 Benefits of My Hobby:</h3>
+            <ol>
+                <li>Enhances creative problem-solving skills.</li>
+                <li>Provides a productive way to de-stress.</li>
+                <li>Allows for a unique perspective on the world.</li>
+            </ol>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a MCA student specializing in Web Development and Data Science. I enjoy building
-            websites using HTML and CSS and learning new technologies in web
-            development and AI. I also have a keen interest in the working of Automotive Sector with respect to coming age technology. 
-       
-        </p>
+    <section id="about" class="about-me">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a student pursuing my Bachelor's degree, deeply interested in web technologies and backend development. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+            <ul class="skills-list">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li><li>MySQL</li>
+            </ul>
+        </div>
     </section>
 
-
-    <section id="projects">
-        <h2>My Projects</h2>
-
-            <div class="project-container">
-            <div class="project">
-                <h3>Woodland Industries(B2B sales portal)</h3>
-                     <p>Woodland Industries is a functional website developed using MERN stack. It is a B2B wood and related materials manufacturer and distributer.</p>
-            </div>
-
-            <div class="project">
-                <h3> F1 Analytics Telemetry Tool </h3>
-                <p>The F1 Analytics Telemetry Tool is an indispensable tool for Formula 1 fans and
-professionals, enabling them to harness the power of data to gain an edge through
-sophisticated data acquisition.</p>
-
-            </div>
-
-            <div class="project">
-                <h3>Kawach</h3>
-                <p> Kawach is a website developed using Bootstrap, CSS, HTML. </p>
-
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4>Food Website</h4>
+                    <p>A Demo Website made for the practice of my own with the hep of html and css in this i have taken a reference link of "catering-sensation.com"
+                        .</p>
+                    <a href="https://github.com/Darshh-tech/Simple_project" class="project-link">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h4>Netflix Clone</h4>
+                    <p>A Netflix clone made with the help of html and css done by the help of youtube videos .</p>
+                    <a href="https://github.com/Darshh-tech/netflix" class="project-link">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h4>Weather Dashboard</h4>
+                    <p>Real-time weather application fetching data from OpenWeather API using JavaScript.</p>
+                    <a href="https://github.com" class="project-link">View on GitHub</a>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-
-        <form>
-            <label>Name:</label><br>
-            <input type="text" placeholder="Your Name" required><br><br>
-
-            <label>Email:</label><br>
-            <input type="email" placeholder="Your Email" required><br><br>
-
-            <label>Message:</label><br>
-            <textarea placeholder="Your Message"></textarea><br><br>
-
-            <input type="submit" value="Submit">
-        </form>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
-   
     <footer>
-        <p>Connect with me:</p>
-        <a href="https://www.linkedin.com/in/vaibhav-sharma-data-scientist-541997218/">LinkedIn</a> |
-        <a href="https://github.com/vbhv2219">GitHub</a>
+        <div class="container">
+            <p>&copy; 2026 Darsh Pincha. All rights reserved.</p>
+            <nav class="social-links">
+                <ul>
+                    <li><a href="https://linkedin.com">LinkedIn</a></li>
+                    <li><a href="https://github.com">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
-
 </body>
 </html>
