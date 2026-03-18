@@ -30,11 +30,17 @@
         <div class="container">
             <h2>Photography & Coding</h2>
             <p>I find immense joy in capturing moments through a lens and building solutions through code. Exploring the intersection of creativity and logic is what keeps me motivated every day.</p>
-            <h3>3 Benefits of My Hobby:</h3>
-            <ol>
-                <li>Enhances creative problem-solving skills.</li>
-                <li>Provides a productive way to de-stress.</li>
-                <li>Allows for a unique perspective on the world.</li>
+            
+            <h3>Hobby Benefits:</h3>
+            <div class="hobby-controls">
+                <input type="text" id="hobbyInput" placeholder="Add a new benefit...">
+                <button id="addHobbyBtn" class="btn">Add Benefit</button>
+            </div>
+            
+            <ol id="hobbyList">
+                <li>Enhances creative problem-solving skills. <button class="delete-btn">Delete</button></li>
+                <li>Provides a productive way to de-stress. <button class="delete-btn">Delete</button></li>
+                <li>Allows for a unique perspective on the world. <button class="delete-btn">Delete</button></li>
             </ol>
         </div>
     </section>
@@ -42,7 +48,7 @@
     <section id="about" class="about-me">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am a student pursuing my Bachelor's degree, deeply interested in web technologies and backend development. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+            <p>I am a student pursuing my Bachelor's degree, deeply interested in web technologies and backend development.</p>
             <ul class="skills-list">
                 <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li><li>MySQL</li>
             </ul>
@@ -55,18 +61,17 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <h4>Food Website</h4>
-                    <p>A Demo Website made for the practice of my own with the hep of html and css in this i have taken a reference link of "catering-sensation.com"
-                        .</p>
+                    <p>A responsive catering website demo built with HTML5 and CSS3.</p>
                     <a href="https://github.com/Darshh-tech/Simple_project" class="project-link">View on GitHub</a>
                 </div>
                 <div class="project-card">
                     <h4>Netflix Clone</h4>
-                    <p>A Netflix clone made with the help of html and css done by the help of youtube videos .</p>
+                    <p>A frontend clone of the Netflix interface practicing CSS Grid.</p>
                     <a href="https://github.com/Darshh-tech/netflix" class="project-link">View on GitHub</a>
                 </div>
                 <div class="project-card">
                     <h4>Weather Dashboard</h4>
-                    <p>Real-time weather application fetching data from OpenWeather API using JavaScript.</p>
+                    <p>Real-time weather application fetching data from OpenWeather API.</p>
                     <a href="https://github.com" class="project-link">View on GitHub</a>
                 </div>
             </div>
@@ -77,18 +82,18 @@
         <div class="container">
             <h2>Contact Me</h2>
             <div class="contact-form">
-                <form>
+                <form id="mainContactForm">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
@@ -99,13 +104,14 @@
     <footer>
         <div class="container">
             <p>&copy; 2026 Darsh Pincha. All rights reserved.</p>
-            <nav class="social-links">
-                <ul>
-                    <li><a href="https://linkedin.com">LinkedIn</a></li>
-                    <li><a href="https://github.com">GitHub</a></li>
-                </ul>
+            <nav class="footer-nav" style="margin-top: 10px;">
+                <a href="https://linkedin.com" style="color: white; margin-right: 15px; text-decoration: none;">LinkedIn</a>
+                <a href="https://github.com" style="color: white; text-decoration: none;">GitHub</a>
             </nav>
+            <div id="footer-clock"></div>
         </div>
     </footer>
+
+    <script src="portfolio.js"></script>
 </body>
 </html>
